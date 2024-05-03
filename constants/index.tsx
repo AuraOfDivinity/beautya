@@ -37,3 +37,34 @@ export const TESTIMONIAL_DETAILS = [
     imageUrl: "/user4.jpeg",
   },
 ];
+
+export const SUITES_LIST = [
+  {
+    name: "Beautya Capture Total Dreamskin Care & Perfect",
+    imageUrl: "/product1-min.png",
+    description:
+      "Plumping Gloss - Instant and Long-Term Volume Effect - 24h Hydration",
+    price: "$76.00",
+  },
+  {
+    name: "Beautya Capture Total Dreamskin Care & Perfect",
+    imageUrl: "/product2-min.png",
+    description:
+      "Plumping Gloss - Instant and Long-Term Volume Effect - 24h Hydration",
+    price: "$76.00",
+  },
+  {
+    name: "Beautya Capture Total Dreamskin Care & Perfect",
+    imageUrl: "/product3-min.png",
+    description:
+      "Plumping Gloss - Instant and Long-Term Volume Effect - 24h Hydration",
+    price: "$76.00",
+  },
+  {
+    name: "Beautya Capture Total Dreamskin Care & Perfect",
+    imageUrl: "/product4-min.png",
+    description:
+      "Plumping Gloss - Instant and Long-Term Volume Effect - 24h Hydration",
+    price: "$76.00",
+  },
+];
