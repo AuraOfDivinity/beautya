@@ -71,12 +71,12 @@ const Navbar = () => {
           <ul className="flex flex-col items-center justify-between min-h-[250px]">
             {NAV_LINKS.map((link, index) => (
               <Link href={link.href} key={index}>
-                <li
+                <div
                   className="border-b border-gray-400 my-8 font-secondary uppercase"
                   onClick={() => setIsNavOpen(false)}
                 >
                   {link.label}
-                </li>
+                </div>
               </Link>
             ))}
           </ul>

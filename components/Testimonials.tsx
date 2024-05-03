@@ -12,7 +12,6 @@ const Testimonials = () => {
           name="description"
           content="Read testimonials from satisfied customers of Beautya."
         />
-        {/* Add other meta tags as needed */}
       </Head>
       <section className="flexCenter py-5">
         <div className="max-container padding-container relative">

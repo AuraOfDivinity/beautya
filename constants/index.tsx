@@ -1,10 +1,8 @@
 export const NAV_LINKS = [
-  { href: "#accomodation", key: "accomodation", label: "Accomodation" },
-  { href: "/", key: "restaurants", label: "Restaurants" },
-  { href: "#banquets", key: "banquets", label: "Banquets" },
-  { href: "#amenities", key: "amenities ", label: "Amenities " },
-  { href: "#explore", key: "explore_us", label: "Explore Us" },
-  { href: "/#delivery", key: "delivery", label: "Delivery" },
+  { href: "#accomodation", key: "accomodation", label: "Products" },
+  { href: "#amenities", key: "amenities ", label: "Offers " },
+  { href: "#explore", key: "explore_us", label: "Testimonials" },
+  { href: "/#delivery", key: "delivery", label: "Contact Us" },
 ];
 
 // HERO SECTION
@@ -68,3 +66,8 @@ export const SUITES_LIST = [
     price: "$76.00",
   },
 ];
+
+export const deliveryMainText =
+  "users can pay directly through our website with Visa or MasterCard or opt for cash or card payment on delivery! Our website is extremely user friendly and offers a stress-freeordering experience with the option to schedule a delivery on aparticular date or time.\n\nOur delivery radius will be from Colombo 1-15 and will include areas in Mount Lavinia, Nawala, Nugegoda, Kohuwala, Dehiwala, Rajagiriya, Welikada, Wellampitiya, Ethul Kotte, Kolonnawa, Sri Jayawardenapura Kotte, Pelawatta, Kotikawatta, Battaramulla, Pita Kotte, Attidiya, Mirihana, Koswatta. If you reside in any of the above locations, orders will be delivered subjected to a delivery charge. \n\n";
+export const deliverySubText =
+  "Visit your local beautya branches to find out more about our special offers in make up and skincare products";
