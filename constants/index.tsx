@@ -71,3 +71,22 @@ export const deliveryMainText =
   "users can pay directly through our website with Visa or MasterCard or opt for cash or card payment on delivery! Our website is extremely user friendly and offers a stress-freeordering experience with the option to schedule a delivery on aparticular date or time.\n\nOur delivery radius will be from Colombo 1-15 and will include areas in Mount Lavinia, Nawala, Nugegoda, Kohuwala, Dehiwala, Rajagiriya, Welikada, Wellampitiya, Ethul Kotte, Kolonnawa, Sri Jayawardenapura Kotte, Pelawatta, Kotikawatta, Battaramulla, Pita Kotte, Attidiya, Mirihana, Koswatta. If you reside in any of the above locations, orders will be delivered subjected to a delivery charge. \n\n";
 export const deliverySubText =
   "Visit your local beautya branches to find out more about our special offers in make up and skincare products";
+
+export const FOOTER_LINKS = [
+  { displayText: "Home", href: "/" },
+  { displayText: "Spa", href: "" },
+  { displayText: "Overview", href: "" },
+  { displayText: "Banquets", href: "#banquets" },
+  { displayText: "Accomodation", href: "#accomodations" },
+  { displayText: "Facilities", href: "#facilities" },
+  { displayText: "Attractions", href: "" },
+  { displayText: "Wine & Dine", href: "" },
+  { displayText: "Promotions", href: "#promotions" },
+  { displayText: "Booking", href: "" },
+  { displayText: "Blog", href: "" },
+  { displayText: "Gallery", href: "" },
+  { displayText: "Site Map", href: "" },
+];
+
+export const footerDescription =
+  "Owned and managed by Alhambra HotelsLtd,\nunder license from Ramada Worldwide\n30, Sir Mohamed Macan Markar Mawatha,Colombo 03, \nSri Lanka\nT: +94 11-242 2001\nF&B Hotline : +94 76 6645507\nF: +94 11-244 7977\ninfo@ramadacolombo.com";
