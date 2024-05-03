@@ -12,7 +12,7 @@ const Navbar = () => {
       <Link href="/">
         <Image
           src="/logo.png"
-          alt="ramada logo"
+          alt="logo"
           width={100}
           height={57}
           //   className="min-w-[205px]"
