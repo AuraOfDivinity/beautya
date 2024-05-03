@@ -33,10 +33,10 @@ const Navbar = () => {
       </ul>
       <div className="xl:flexCenter hidden">
         <button
-          className="flexCenter gap-3 rounded-md bg-wine-primary"
+          className="flexCenter gap-3 text-xl text-white bg-wine-primary hover:bg-white hover:text-wine-primary hover:border-wine-primary hover:border"
           style={{ width: "158px", height: "54px" }}
         >
-          <label className="whitespace-nowrap text-white font-primary regular-24 flexCenter">
+          <label className="whitespace-nowrap  font-sans  flexCenter">
             Contact
           </label>
         </button>

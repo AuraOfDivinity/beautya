@@ -40,7 +40,7 @@ const Offers = () => {
                 {deliverySubText}
               </div>
               <div className="text-right mt-6">
-                <button className="flex items-center justify-center gap-3 bg-wine-primary px-4 py-2 text-white font-sans text-base hover:bg-opacity-80">
+                <button className="flex items-center justify-center gap-3 bg-wine-primary px-4 py-2 text-white font-sans text-base hover:bg-white hover:text-wine-primary hover:border-wine-primary hover:border">
                   Order Now
                 </button>
               </div>

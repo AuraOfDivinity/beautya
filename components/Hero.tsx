@@ -32,7 +32,7 @@ const Hero = () => {
               </div>
               <div className="justify-center text-center mt-4">
                 <button
-                  className="border-white text-white border-2 px-4 py-2 hover:bg-white hover:text-wine"
+                  className="border-white text-white border-2 px-4 py-2 hover:bg-white hover:text-wine-primary"
                   onMouseEnter={() => setIsButtonHovered(true)}
                   onMouseLeave={() => setIsButtonHovered(false)}
                 >
