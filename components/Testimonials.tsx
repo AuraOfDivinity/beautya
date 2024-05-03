@@ -25,14 +25,9 @@ const Testimonials = () => {
                       {testimonial.description}
                     </div>
                     <div className="flex items-center gap-1 mt-3">
-                      {[...Array(5)].map(
-                        (
-                          _,
-                          i // Rendering five star icons
-                        ) => (
-                          <Star key={i} size={24} color="#A10550" /> // Using the Star icon component with primary-wine color
-                        )
-                      )}
+                      {[...Array(5)].map((_, i) => (
+                        <Star key={i} size={24} color="#A10550" /> // Using the Star icon component with primary-wine color
+                      ))}
                     </div>
                     <div className="font-sans text-black-primary text-base font-bold mt-4">
                       - {testimonial.name}
@@ -53,42 +48,15 @@ const Testimonials = () => {
                       src={testimonial.imageUrl}
                       alt="Bonnie image"
                     />
-                    <div className="font-sans text-black-primary regular-16 px-10  leading-4 mt-4">
+                    <div className="font-sans text-black-primary regular-16 px-10 leading-5 mt-4">
                       {testimonial.description}
                     </div>
                     <div className="flex items-center gap-1 mt-3">
-                      <Image
-                        src="/Star.png"
-                        alt="star"
-                        width={24}
-                        height={24}
-                      />
-                      <Image
-                        src="/Star.png"
-                        alt="star"
-                        width={24}
-                        height={24}
-                      />
-                      <Image
-                        src="/Star.png"
-                        alt="star"
-                        width={24}
-                        height={24}
-                      />
-                      <Image
-                        src="/Star.png"
-                        alt="star"
-                        width={24}
-                        height={24}
-                      />
-                      <Image
-                        src="/Star.png"
-                        alt="star"
-                        width={24}
-                        height={24}
-                      />
+                      {[...Array(5)].map((_, i) => (
+                        <Star key={i} size={24} color="#A10550" /> // Using the Star icon component with primary-wine color
+                      ))}
                     </div>
-                    <div className="font-sans text-black-primary bold-26 mt-4">
+                    <div className="font-sans text-black-primary text-base font-bold mt-4">
                       - {testimonial.name}
                     </div>
                   </div>
