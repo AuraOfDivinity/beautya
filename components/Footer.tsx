@@ -1,11 +1,17 @@
+"use client";
 import Link from "next/link";
-import React from "react";
+import React, { useState } from "react";
 import Image from "next/image";
 import { FOOTER_LINKS, footerDescription } from "@/constants";
+import Modal from "react-modal";
+import ContactForm from "./ContactForm";
 
 const Footer = () => {
   return (
-    <div className="w-[100%] h-auto flex relative bg-wine-900 flex-col">
+    <div
+      className="w-[100%] h-auto flex relative bg-wine-900 flex-col"
+      id="contact"
+    >
       <Image
         src="/logo.png"
         alt="ramada logo"
@@ -25,7 +31,7 @@ const Footer = () => {
             />
             <button className="min-w-[20%] xl:absolute sm:w-[100%] xs:w-[100%] xl:w-[25%] end-2.5 bottom-2.5 bg-wine-primary text-white font-primary rounded-sm px-4 py-0.5 hover:bg-white hover:text-wine-primary hover:border-wine-primary hover:border">
               <label className="whitespace-nowrap  font-sans  flexCenter">
-                Get In Touch
+                Subscribe
               </label>
             </button>
           </div>

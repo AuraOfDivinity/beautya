@@ -13,7 +13,7 @@ const Testimonials = () => {
           content="Read testimonials from satisfied customers of Beautya."
         />
       </Head>
-      <section className="flexCenter py-5">
+      <section className="flexCenter py-5" id="testimonials">
         <div className="max-container padding-container relative">
           <div className="flex flex-col flex-1 items-center">
             <div className="font-sans text-2xl font-bold text-wine-900 pb-2 text-center my-12 mx-auto">

@@ -9,7 +9,7 @@ const Offers = () => {
         <title>Offers</title>
         <meta name="description" content="Ongoing offers." />
       </Head>
-      <section className="flexCenter py-5" id="delivery">
+      <section className="flexCenter py-5" id="offers">
         <div className="max-container padding-container relative w-full">
           <div className="font-sans text-2xl font-bold text-wine-900 pb-2 text-center my-12 mx-auto">
             Offers
@@ -18,7 +18,7 @@ const Offers = () => {
             <div className="flex-1">
               <Image
                 src="/offer.png"
-                alt="delivery image"
+                alt="offers image"
                 width={800}
                 height={800}
                 className="object-cover w-full min-w-max"

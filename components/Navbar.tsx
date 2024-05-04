@@ -4,9 +4,11 @@ import { NAV_LINKS } from "@/constants";
 import Image from "next/image";
 import Link from "next/link";
 import { useState } from "react";
+import ContactFormModal from "./ContactForm";
 
 const Navbar = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
+  const [isContactModalOpen, setIsContactModalOpen] = useState(false);
   return (
     <nav className="flexBetween max-container padding-container relative z-30 py-5">
       <Link href="/">
@@ -35,6 +37,7 @@ const Navbar = () => {
         <button
           className="flexCenter gap-3 text-xl text-white bg-wine-primary hover:bg-white hover:text-wine-primary hover:border-wine-primary hover:border"
           style={{ width: "158px", height: "54px" }}
+          onClick={() => setIsContactModalOpen(true)}
         >
           <label className="whitespace-nowrap  font-sans  flexCenter">
             Contact
@@ -81,6 +84,11 @@ const Navbar = () => {
             ))}
           </ul>
         </div>
+        {/* Contact modal */}
+        <ContactFormModal
+          isOpen={isContactModalOpen}
+          onClose={() => setIsContactModalOpen(false)}
+        />
       </section>
     </nav>
   );

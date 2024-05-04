@@ -21,7 +21,7 @@ const Hero = () => {
             sizes="100vw"
             className={`brightness-50 ${
               isButtonHovered ? "brightness-100" : ""
-            } object-cover object-top 2xl:rounded-5xl transition duration-300`}
+            } object-cover object-top transition duration-300`}
             style={{ maxHeight: "700px", width: "100%", height: "auto" }}
             loading="eager"
           />
