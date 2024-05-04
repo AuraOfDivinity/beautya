@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Modal from "react-modal";
 import axios from "axios";
 import { useForm } from "react-hook-form";
+import toast, { Toaster } from "react-hot-toast";
 
 interface ContactFormModalProps {
   isOpen: boolean;
@@ -33,7 +34,7 @@ const ContactFormModal: React.FC<ContactFormModalProps> = ({
           description: data.description,
           subject: data.description,
           email: data.email,
-          status: 5,
+          status: 2,
           priority: 2,
         },
         {
@@ -44,8 +45,13 @@ const ContactFormModal: React.FC<ContactFormModalProps> = ({
         }
       );
       reset();
-      alert("Ticket created successfully!");
-      onClose();
+      toast.success(
+        "Ticket created successfully! We will get back to you shortly.",
+        {
+          position: "bottom-center",
+        }
+      );
+      // onClose();
     } catch (error) {
       console.error("Error creating ticket:", error);
       alert("Failed to create ticket. Please try again later.");
@@ -119,6 +125,7 @@ const ContactFormModal: React.FC<ContactFormModalProps> = ({
           </button>
         </form>
       </div>
+      <Toaster />
     </Modal>
   );
 };
