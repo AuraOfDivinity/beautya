@@ -54,7 +54,12 @@ const ContactFormModal: React.FC<ContactFormModalProps> = ({
       // onClose();
     } catch (error) {
       console.error("Error creating ticket:", error);
-      alert("Failed to create ticket. Please try again later.");
+      toast.error(
+        "there was an error creating the ticket. Please try again later.",
+        {
+          position: "bottom-center",
+        }
+      );
     } finally {
       setIsSubmitting(false);
     }
@@ -71,11 +76,19 @@ const ContactFormModal: React.FC<ContactFormModalProps> = ({
         overlay: {
           backgroundColor: "rgba(0, 0, 0, 0.5)",
         },
+        content: {
+          width: "80%", // Adjust width as needed
+          maxWidth: "800px", // Set maximum width
+          height: "auto", // Allow height to adjust based on content
+          maxHeight: "80%", // Set maximum height if needed
+          margin: "auto", // Center the modal horizontally
+          padding: "20px", // Add padding around the modal content
+        },
       }}
     >
       <div
         className="max-container padding-container relative w-full bg-wine-750 rounded-lg p-6"
-        style={{ width: "500px", height: "auto" }}
+        style={{ width: "600px", height: "auto" }}
       >
         <h2 className="font-sans text-2xl font-bold text-white mb-4">
           Contact Us
@@ -85,7 +98,7 @@ const ContactFormModal: React.FC<ContactFormModalProps> = ({
             <label className="font-sans text-white block mb-1">Name:</label>
             <input
               {...register("name", { required: true })}
-              className="w-full p-2  border border-white text-black-primary"
+              className="w-full max-w-md p-2  border border-white text-black-primary"
             />
             {errors.name && (
               <span className="text-red-500">Name is required</span>
@@ -98,7 +111,7 @@ const ContactFormModal: React.FC<ContactFormModalProps> = ({
                 required: true,
                 pattern: /^\S+@\S+$/i,
               })}
-              className="w-full p-2  border border-white text-black-primary"
+              className="w-full p-2 max-w-md border border-white text-black-primary"
             />
             {errors.email && (
               <span className="text-red-500">Invalid email address</span>
@@ -110,7 +123,7 @@ const ContactFormModal: React.FC<ContactFormModalProps> = ({
             </label>
             <textarea
               {...register("description", { required: true })}
-              className="w-full p-2  border border-white text-black-primary"
+              className="w-full p-2 max-w-md border border-white text-black-primary"
             />
             {errors.description && (
               <span className="text-red-500">Description is required</span>
